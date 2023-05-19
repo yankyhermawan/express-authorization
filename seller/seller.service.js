@@ -68,7 +68,7 @@
  *     responses:
  *       200:
  *         description: Seller ID Response
- *         contents:
+ *         content:
  *           application/json:
  *             schema:
  *               $ref: '#/components/schemas/Seller'

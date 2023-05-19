@@ -2,7 +2,7 @@ version: '3'
 
 services:
   app:
-    image: backend-extra
+    image: yankyhermawan/backend-extra
     container_name: backend-extra-app
     build: .
     ports:

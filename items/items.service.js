@@ -50,7 +50,7 @@
  *     responses:
  *       200:
  *         description: Item ID Response
- *         contents:
+ *         content:
  *           application/json:
  *             schema:
  *               $ref: '#/components/schemas/Items'
@@ -98,6 +98,10 @@
  *     response:
  *       200:
  *         description: Item Deleted
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Items'
  *       500:
  *         description: Server Error
  *
