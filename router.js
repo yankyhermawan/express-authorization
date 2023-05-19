@@ -2,10 +2,9 @@ import express from "express";
 import { SellerService } from "./seller/seller.service.js";
 import { ItemsService } from "./items/items.service.js";
 import { ItemsGuard } from "./items/items.guard.js";
-import jwt from "jsonwebtoken";
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 const sellerService = new SellerService();
 const itemsService = new ItemsService();
 const itemsGuard = new ItemsGuard();
