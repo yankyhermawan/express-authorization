@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 4000
 
 # Start the application
-CMD ["node", "router.js"]
+CMD ["npm", "run", "start:prod"]

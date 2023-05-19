@@ -1,28 +1,12 @@
 version: '3'
 
 services:
-  postgres:
-    image: postgres:14
-    container_name: backend-extra-database
-    ports:
-      - 5432:5432
-    env_file:
-      - .env
-    volumes:
-      - postgres:/var/lib/postgresql/data
-    restart: always
-
   app:
     image: backend-extra
     container_name: backend-extra-app
     build: .
     ports:
-      - 7777:7777
+      - 4000:4000
     env_file:
       - .env
-    depends_on:
-      - postgres
     restart: always
-
-volumes:
-  postgres:
